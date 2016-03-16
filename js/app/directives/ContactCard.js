@@ -1,16 +1,23 @@
 function ContactCard() {
   return {
+    scope: {
+      name: '=',
+      email: '=',
+      phone: '='
+    },
     template: [
             '<div class="contact">',
             '<h4>Contact Card</h4>',
-              '<a href="https://twitter.com/{{contact.name}}">Follow @{{contact.name}} on twitter!</a>',
-              '<label>Name: {{contact.name}}</label>',
-              '<label>Email: {{contact.email}}</label>',
-              '<label>Phone: {{contact.phone}}</label>',
+              '<a href="https://twitter.com/{{name}}">Follow @{{name}} on twitter!</a>',
+              '<label>Name:</label>',
+              '{{name}}',
+              '<label>Email:</label>',
+              '{{email}}',
+              '<label>Phone:</label>',
+              '{{phone}}',
             '</div>'
         ].join(''),
-        restrict: 'E',
-        scope: true
+        restrict: 'E'
   }
 }
 

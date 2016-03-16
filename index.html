@@ -26,7 +26,10 @@
           <div ng-repeat='contact in ctrl.contacts'>
             <ul>
                 <li>
-                  <contact-Card></contact-Card>
+                  <contact-Card
+                    name='contact.name'
+                    email='contact.email'
+                    phone='contact.phone' />
                 </li>
             </ul>
           </div>
