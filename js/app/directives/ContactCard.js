@@ -1,11 +1,16 @@
 function ContactCard() {
   return {
+    scope: {
+      name: '=',
+      email: '=',
+      phone: '='
+    }, 
     template: [
       '<div class="contact">',
       '<h4>Contact Card</h4>',
-      '<label>Name: </label>{{ contact.name }}',
-      '<label>Email: </label>{{ contact.email }}',
-      '<label>Phone: </label>{{ contact.phone }}',
+      '<label>Name: </label>{{ name }}',
+      '<label>Email: </label>{{ email }}',
+      '<label>Phone: </label>{{ phone }}',
       '</div>'
     ].join(''),
     restrict: 'E'
@@ -15,3 +20,4 @@ function ContactCard() {
 angular
   .module('app')
   .directive('contactCard', ContactCard);
+  
