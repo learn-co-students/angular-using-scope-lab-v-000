@@ -13,7 +13,6 @@
             font-size: 12px;
             margin-top: 20px;
         }
-
         ul {
             list-style: none;
         }
@@ -23,8 +22,9 @@
 
     <div ng-app="app" class="app">
         <div ng-controller="ContactController as ctrl">
-            <ul>
-                <li>
+            <ul >
+                <li ng-repeat="contact in ctrl.contacts">
+                <contact-card name="contact.name" email="contact.email" phone="contact.phone"></contact-card>
                 </li>
             </ul>
         </div>
