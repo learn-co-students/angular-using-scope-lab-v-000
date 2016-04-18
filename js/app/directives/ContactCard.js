@@ -1,7 +1,8 @@
 function ContactCard() {
   return {
+    
     template: [
-      '<div class="contact">',
+      '<div>',
         '<h4>Contact Card</h4>',
         '<div>Name: {{ name }}</div>',
         '<div>Email: {{ email }}</div>',
@@ -13,9 +14,7 @@ function ContactCard() {
       name: '=',
       phone: '=',
       email: '='
-    },
-
-    restrict: 'E'
+    }
   }
 }
 
