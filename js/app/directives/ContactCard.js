@@ -3,9 +3,9 @@ function ContactCard(){
     template: [
       '<div>', 
       '<h4>Contact Card</h4>', 
-      '<label>Name: {{contact.name}} </label>', 
-      '<label>Email: {{contact.email}}</label>', 
-      '<label>Phone: {{contact.phone}}</label>',
+      '<label>Name:</label> {{contact.name}}', 
+      '<label>Email:</label> {{contact.email}}', 
+      '<label>Phone:</label> {{contact.phone}}',
       '</div>'
     ].join(''),
     scope: {contact: '=handle'},
