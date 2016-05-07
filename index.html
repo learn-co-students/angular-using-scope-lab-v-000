@@ -26,7 +26,10 @@
             <ul>
 
                 <li ng-repeat="contact in ctrl.contacts">
-                    <contact-card>
+                    <contact-card
+                        name="contact.name"
+                        phone="contact.phone"
+                        email="contact.email">
                     </contact-card>
                 </li>
             </ul>

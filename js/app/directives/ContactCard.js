@@ -3,16 +3,16 @@ function ContactCard() {
     template: [
     "<div>",
       "<h4>Contact Card</h4>",
-      "<label>Name:{{contact.name}}</label>",
-      "<label>Email:{{contact.email}}</label>",
-      "<label>Phone:{{contact.phone}}</label>",
+      "<label>Name:{{name}}</label>",
+      "<label>Email:{{email}}</label>",
+      "<label>Phone:{{phone}}</label>",
     "</div>"
-    ].join('')
-    // scope: {
-    //     name: '=',
-    //     email: '=',
-    //     phone: '='
-    // }
+    ].join(''),
+    scope: {
+        name: '=',
+        email: '=',
+        phone: '='
+    }
   }
 }
 
