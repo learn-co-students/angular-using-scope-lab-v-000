@@ -24,7 +24,8 @@
     <div ng-app="app" class="app">
         <div ng-controller="ContactController as ctrl">
             <ul>
-                <li>
+                <li ng-repeat="contact in ctrl.contacts">
+                <contact-card>{{ contact }}</contact-card>
                 </li>
             </ul>
         </div>
