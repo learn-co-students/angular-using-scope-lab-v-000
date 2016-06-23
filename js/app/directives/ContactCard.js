@@ -4,14 +4,17 @@ function ContactCard(){
       '<div>',
         '<h4>Contact Card</h4>',
         '<label>Name: </label>',
-        '<p>{{ contact.name }}</p>',
+        '<p>{{ handle.name }}</p>',
         '<label>Email: </label>',
-        '<p>{{ contact.email }}</p>',
+        '<p>{{ handle.email }}</p>',
         '<label>Phone: </label>',
-        '<p>{{ contact.phone }}</p>',
+        '<p>{{ handle.phone }}</p>',
       '</div>'
     ].join(''),
-    restrict: 'E'
+    restrict: 'E',
+    scope: {
+      handle: '='
+    }
   };
 }
 
