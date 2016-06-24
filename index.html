@@ -9,7 +9,14 @@
     <style>
         label {
             display: block;
-            text-transform: uppercase;
+            text-transform: capitalize;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+
+        .email {
+            display: block;
+            text-transform: lowercase;
             font-size: 12px;
             margin-top: 20px;
         }
@@ -24,7 +31,11 @@
     <div ng-app="app" class="app">
         <div ng-controller="ContactController as ctrl">
             <ul>
-                <li>
+                <li ng-repeat="contact in ctrl.contacts">
+                    <contact-card 
+                        name="contact.name"
+                        email="contact.email"
+                        phone="contact.phone"/></contact-card>
                 </li>
             </ul>
         </div>
