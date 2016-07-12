@@ -9,7 +9,6 @@
     <style>
         label {
             display: block;
-            text-transform: uppercase;
             font-size: 12px;
             margin-top: 20px;
         }
@@ -24,7 +23,7 @@
     <div ng-app="app" class="app">
         <div ng-controller="ContactController as ctrl">
             <ul>
-                <li ng-repeat="contact in ctrl.contact">
+                <li ng-repeat="contact in ctrl.contacts">
                   <contact-card handle="contact"></contact-card>
                 </li>
             </ul>
