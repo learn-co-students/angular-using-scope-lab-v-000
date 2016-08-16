@@ -1,10 +1,5 @@
 function ContactCard() {
 return {
-  scope: {
-    name: '=',
-    email: '=',
-    phone: '='
-  },
 template: [
 '<div>',
         '<h4>Contact Card </h4>',
