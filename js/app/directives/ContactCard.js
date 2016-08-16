@@ -6,14 +6,19 @@ return {
     phone: '='
   },
 template: [
-'<div>,
-    <h4>Contact Card</h4>,
-          '<label>NAME: {{ handle.name }}</label>',
-        '<label>EMAIL: {{ handle.email }}</label>',
-        '<label>Phone: {{ handle.phone }}</label>',
- 
-</div>'
+'<div>',
+        '<h4>Contact Card </h4>',
+        '<label>Name:</label>',
+        '{{handle.name}}',
+        '<label>Email:</label>',
+        '{{handle.email}}',
+        '<label>Phone:</label>',
+        '{{handle.phone}}',
+      '</div>'
 ].join(''),
+scope: {
+  handle: '='
+    },
 restrict: 'E'
 };
 }

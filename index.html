@@ -25,10 +25,7 @@
         <div ng-controller="ContactController as ctrl">
             <ul>
                 <li ng-repeat="contact in ctrl.contacts">
-                    <contact-card     
-                        name="contact.name"
-                          email="contact.email"
-                          phone="contact.phone" />
+                    <contact-card handle='contact'></contact-card>
 
                 </li>
             </ul>
