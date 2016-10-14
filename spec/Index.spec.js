@@ -6,8 +6,8 @@ describe('Directive Test', function() {
 	it('should display the contact details correctly', function() {
 		var list = element.all(by.repeater('contact in ctrl.contacts'));
 
-		expect(list.get(1).getText()).toContain('Steve Jobs');
-		expect(list.get(1).getText()).toContain('steve@apple.com');
+		expect(list.get(1).getText()).toContain('STEVE JOBS');
+		expect(list.get(1).getText()).toContain('STEVE@APPLE.COM');
 		expect(list.get(1).getText()).toContain('12345678910');
 	});
 });
