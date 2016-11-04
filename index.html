@@ -21,14 +21,18 @@
 </head>
 <body>
 
-    <div ng-app="app" class="app">
-        <div ng-controller="ContactController as ctrl">
-            <ul>
-                <li>
-                </li>
-            </ul>
-        </div>
-    </div>
+  <div ng-app="app" class="app">
+      <div ng-controller="ContactController as ctrl">
+          <ul>
+              <li ng-repeat="contact in ctrl.contacts">
+                  <contact-card
+                          name="contact.name"
+                          email="contact.email"
+                          phone="contact.phone" />
+              </li>
+          </ul>
+      </div>
+  </div>
 
     <script src="js/angular.js"></script>
     <script src="js/app/app.js"></script>
