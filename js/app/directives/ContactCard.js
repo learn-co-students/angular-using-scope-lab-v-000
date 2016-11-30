@@ -10,7 +10,8 @@ function ContactCard() {
                 '<label>Phone: </label>',
                 '{{ contact.phone}}',
             '</div>'
-        ].join('')
+        ].join(''),
+        restrict: 'E'
     };
 }
 
