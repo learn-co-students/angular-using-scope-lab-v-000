@@ -16,6 +16,7 @@ function ContactController() {
 		email: 'president@whitehouse.com',
 		phone: '75934988239'
 	}];
+	
 }
 
 angular
